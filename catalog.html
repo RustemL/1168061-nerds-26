@@ -41,9 +41,54 @@
       </header>
       <main>
          <h1>Магазин готовых шаблонов</h1>
-         <section class="filters">
-            <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!-- Здесь будет форма-->
+         <section>
+            <form>
+               <section class="filters">
+                  <h2 class="visually-hidden">Фильтр товаров</h2>
+                  <fieldset>
+                     <legend>СЕТКА:</legend>
+                     <ul>
+                        <li>
+                           <input type="radio" name="product-group" value="adaptive"  checked>
+                           Адаптивная
+                        </li>
+                        <li>
+                           <input type="radio" name="product-group" value="fix">
+                           Фиксированная
+                        </li>
+                        <li>
+                           <input type="radio" name="product-group" value="buble">
+                           Резиновая
+                        </li>
+                     </ul>
+                  </fieldset>
+                  <fieldset>
+                     <legend>ОСОБЕННОСТИ:</legend>
+                     <ul>
+                        <li>
+                           <input type="checkbox" name="slader" id="filter-slader" checked>
+                           <label for="slader">Слайдер</label>
+                        </li>
+                        <li>
+                           <input type="checkbox" name="advantage" id="filter-blog-advantage">
+                           <label for="filter-mr-natty">Блог преимуществ</label>
+                        </li>
+                        <li>
+                           <input type="checkbox" name="news" id="filter-news" checked>
+                           <label for="news">Новости</label>
+                        </li>
+                        <li>
+                           <input type="checkbox" name="gallery" id="filter-gallery">
+                           <label for="filter-gallery">Галерея</label>
+                        </li>
+                        <li>
+                           <input type="checkbox" name="bin" id="filter-bin">
+                           <label for="filter-bin">Корзина</label>
+                        </li>
+                     </ul>
+                  </fieldset>
+            </form>
+            </section>
          </section>
          <section class="catalog">
             <h2 class="visually-hidden">Список готовых шаблонов</h2>
@@ -106,35 +151,56 @@
                </div>
             </li>
          </section>
+         <section>
+            <h2>
+            Напишите нам
+            <h2>
+            <form action="https://echo.htmlacademy.ru" method="post">
+               <p>
+                  Имя
+                  <input type="text" name="name" value="" placeholder="Имя Фамилия">
+               </p>
+               <p>
+                  E-mail
+                  <input type="text" name="email" value="" placeholder="example@example.com">
+               </p>
+               <p>
+                  Текст письма
+                  <input type="text" name="sub" value="" placeholder="В свободной форме">
+               </p>
+               <button type="submit">Отправить</button>
+               <button type="button">Закрыть</button>
+            </form>
+         </section>
       </main>
-    <footer>
-        <div>
+      <footer>
+         <div>
             <p>Давайте дружить, это выгодно!</p>
             <p>Скидка 10% для друзей из социальных сетей</p>
-        </div>
-        <ul>
-         <div>
-            <li>
-              <a href="#">
-                Вконтакте
-              </a>
-            </li>
          </div>
-           <div>
-             <li>
-              <a href="#">
-                Фейсбук
-              </a>
-            </li>
-         </div>
+         <ul>
             <div>
-              <li>
-               <a href="#">
-                 Инстаграм
-               </a>
-              </li>
-             </div>
+               <li>
+                  <a href="#">
+                  Вконтакте
+                  </a>
+               </li>
+            </div>
+            <div>
+               <li>
+                  <a href="#">
+                  Фейсбук
+                  </a>
+               </li>
+            </div>
+            <div>
+               <li>
+                  <a href="#">
+                  Инстаграм
+                  </a>
+               </li>
+            </div>
          </ul>
-       </footer>
+      </footer>
    </body>
 </html>
