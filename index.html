@@ -1,111 +1,117 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="сайты, логотипы, разработка, дизайн">
-    <meta name="description" content="Дизайн студия">
-    <title>Design studio NERDS</title>
-  </head>
-  <body>
-    <header>
-      <div>
-        <a>
-          <img src="img/index-logo.svg" width="160" height="67" alt="Логотип дизайн студии NERDS">
-        </a>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">
-              Студия
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Клиенты
-            </a>
-          </li>
-          <li>
-            <a href="catalog.html">
-              Магазин
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Контакты
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Корзина
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div>
-        <p><img src="img/product-1.png" width="300" height="146" alt="Здесь будет картинка Ноутбук"></p>
-        <p>ВЕБ-САЙТЫ </p>
-        <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-        <p><button type="button">Заказать</button></p>
-      </div>
-      <div>
-        <p><img src="img/product-2.png" width="300" height="146" alt="Здесь будет картинка Сотовые телефоны"></p>
-        <p>ПРИЛОЖЕНИЯ</p>
-        <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
-        <p><button type="button">Заказать</button></p>
-      </div>
-      <div>
-        <p><img src="img/product-3.png" width="300" height="146" alt="Здесь будет картинка Монитор"></p>
-        <p>ПРЕЗЕНТАЦИИ</p>
-        <p>Вы даже не подозреваете насколько вы изумительны</p>
-        <p><button type="button">Заказать</button></p>
-      </div>
-      <section>
-        <h2>
-          Напишите нам
-        <h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-             Имя
+   <head>
+      <meta charset="utf-8">
+      <meta name="keywords" content="сайты, логотипы, разработка, дизайн">
+      <meta name="description" content="Дизайн студия">
+      <title>Design studio NERDS</title>
+     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+   </head>
+   <body>
+      <header class="main-header">
+         <nav class="main-navigation">
+           <div>
+         <a class="main-header-logo">
+         <img src="img/index-logo.svg" width="160" height="67" alt="Логотип дизайн студии NERDS">
+         </a>
+          </div>
+            <ul class="site-navigation">
+               <li>
+                  <a href="#">
+                  Студия
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                  Клиенты
+                  </a>
+               </li>
+               <li>
+                  <a href="catalog.html">
+                  Магазин
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                  Контакты
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                  Корзина
+                  </a>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <main class="container">
+        <section class="feature-list">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="features-list">
+         <li class="features-item">
+            <p><img src="img/product-1.png" width="300" height="146" alt="Здесь будет картинка Ноутбук"></p>
+            <h2>ВЕБ-САЙТЫ </h2>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <p><button class="red" type="button">Заказать</button></p>
+         </li>
+         <li class="features-item">
+            <p><img src="img/product-2.png" width="300" height="146" alt="Здесь будет картинка Сотовые телефоны"></p>
+            <h2>ПРИЛОЖЕНИЯ</h2>
+            <p>Покорите топ-10 приложений в AppStore и GooglePlay</p>
+            <p><button class="green" type="button">Заказать</button></p>
+         </li>
+         <li class="features-item">
+            <p><img src="img/product-3.png" width="300" height="146" alt="Здесь будет картинка Монитор"></p>
+            <h2>ПРЕЗЕНТАЦИИ</h2>
+            <p>Вы даже не подозреваете насколько вы изумительны</p>
+            <p><button class="yellow" type="button">Заказать</button></p>
+         </li>
+          </ul>
+          </section>
+        <section class="write-to-us">
+        <h2>Напишите нам<h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
+          <p class="write-item">
+            Имя
             <input type="text" name="name" value="" placeholder="Имя Фамилия">
           </p>
-          <p>
-             E-mail
+          <p class="write-item">
+            E-mail
             <input type="text" name="email" value="" placeholder="example@example.com">
           </p>
-          <p>
-             Текст письма
-            <input type="text" name="sub" value="" placeholder="В свободной форме">
+          <p class="write-item">
+            Текст письма
+            <input type="text" name="sub" value="" placeholder="Текст письма">
           </p>
-          <button type="submit">Отправить</button>
-          <button type="button">Закрыть</button>
+            <button class="redfooter" type="submit">Отправить</button>
+            <button type="button">Закрыть</button>
         </form>
       </section>
-    </main>
-    <footer>
-      <div>
-        <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей</p>
-      </div>
-      <ul>
-        <li>
-          <a href="#">
-            Вконтакте
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Фейсбук
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Инстаграм
-          </a>
-        </li>
-      </ul>
-    </footer>
-  </body>
-</html>
+      </main>
+      <footer class="main-footer">
+          <div class="footer-social">
+              <p>Давайте дружить, это выгодно!</p>
+              <p>Скидка 10% для друзей из социальных сетей</p>
+          <ul>
+              <li>
+                <a href="#">
+                  Вконтакте
+                </a>
+              </li>
+               <li>
+                <a href="#">
+                  Фейсбук
+                </a>
+              </li>
+                <li>
+                 <a href="#">
+                   Инстаграм
+                 </a>
+                </li>
+           </ul>
+          </div>
+         </footer>
+     </body>
+  </html>
